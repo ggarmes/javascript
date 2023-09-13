@@ -5,23 +5,39 @@ let numero2 = parseInt(prompt("Ingresa un segundo numero: "))
 
 let operacion = parseInt(prompt("Que desea hacer con los numero ingresados 1 para sumar, 2 para restar, 3 para multiplicar, 4 para dividir y 5 para salir: "))
 
+function suma(numero1, numero2){
+    resultSuma = numero1 + numero2
+    alert("La suma de los 2 numeros es: " + resultSuma);
+}
+
+function resta(numero1, numero2){
+    resultResta = numero1 - numero2
+    alert("La resta de los numeros es: " + resultResta);
+}
+
+function multiplica(numero1, numero2){
+    resultMultiplicar = numero1 * numero2
+    alert("La multiplicacion de los numeros es: " + resultMultiplicar);
+}
+
+function dividir(numero1, numero2){
+    resultDividir = numero1 / numero2
+    alert("La division de los numeros es: " + resultDividir);
+}
+
 while(operacion != 5 ){
     switch (operacion){
         case 1:
-            resultSuma = numero1 + numero2
-            alert("La suma de los 2 numeros es: " + resultSuma);
+            suma(numero1, numero2);
             break;
         case 2:
-            resultResta = numero1 - numero2
-            alert("La resta de los numeros es: " + resultResta);
+            resta(numero1, numero2);
             break;
         case 3:
-            resultMultiplicar = numero1 * numero2
-            alert("La multiplicacion de los numeros es: " + resultMultiplicar);
+            multiplica(numero1, numero2);
             break;
         case 4:
-            resultDividir = numero1 / numero2
-            alert("La division de los numeros es: " + resultDividir);
+            dividir(numero1, numero2);
             break;
         default:
             alert("Introduzca una operacion correcta")
