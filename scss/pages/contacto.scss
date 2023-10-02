@@ -1,0 +1,58 @@
+#contactoSection{
+    @include flexbox(row, nowrap, center, center);
+    text-align-last: right;
+    iframe{
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        @include mediaquery-tablet(){
+            width: 300px;
+            height: 300px;
+        }
+        @include mediaquery-mobile(){
+            width: 250px;
+            height: 250px;
+        }
+    }
+    .formulario__contacto{
+        @include flexbox(column, nowrap, center, center);
+        margin: 30px;
+        @include mediaquery-tablet(){
+            margin: 20px;
+        }
+        @include mediaquery-mobile(){
+            margin: 10px;
+        }
+        h2{
+            font-size: 35px;
+            text-transform: uppercase;
+            font-weight: bold;
+            @include mediaquery-tablet(){
+                font-size: 25px;
+            }
+            @include mediaquery-mobile(){
+                font-size: 18px;
+            }
+        }
+        p{
+            font-size: 20px;
+            padding: 15px;
+            margin: 0;
+            @include mediaquery-tablet(){
+                font-size: 18px;
+                padding: 10px;
+            }
+            @include mediaquery-mobile(){
+                font-size: 13px;
+                padding: 5px;
+            }
+        }
+    }
+    @include mediaquery-tablet(){
+        text-align-last: unset;
+    }
+    @include mediaquery-mobile(){
+        flex-direction: column;
+        align-items: center;
+    }
+}

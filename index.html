@@ -1,13 +1,96 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <meta name="description" content="Te conectamos con diferentes refugios para que adoptes a tu próxima mascota.">
+        <meta name="keywords" content="Moscota, adopción, adopta, perdida, refugios, perro, gato, cachorro, cachorra">
+        <!-- Fuente Kanit -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;0,400;1,300;1,700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <!-- Hoja de estilos Bootstrap -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <!-- Hoja de estilos propia -->
+        <link rel="stylesheet" href="./css/app.css">
+        <title>Te Adopto | Inicio</title>
     </head>
     <body>
         
+        <!-- Header donde esta el logo del sitio y el menu de navegación-->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" alt="Logo Te Adopto" class="header__logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/refugios.html">Refugios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/mascotas.html">Mascotas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/login.html">Mi Cuenta</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
+        <!-- El banner con la frase -->
+        <nav id="nav__slogan">
+            <h1>¡No compres uno de raza, adopta uno sin casa!</h1>
+        </nav>
 
-        <script src="main.js"></script>
+        <!-- El contenido del main -->
+        <main>
+            <div id="main__titulo">
+                <img src="./images/perro-home.png" alt="Imagen de perro en el inicio" id="imgPerroIndex">
+                <h2>¡Te Adopto!</h2>
+            </div>
+            <section id="indexSection">
+                <h2>¡Te Adopto!</h2>
+                <div class="cuadro__inicio">
+                    <a href="./pages/en-adopcion.html"><h3>¿QUIERES ADOPTAR?</h3></a>
+                    <p class="textoIndex">La adopción es cada vez más común, pero todavía hay quienes se decantan por comprar un animal. Muchos esperan su oportunidad en un refugio. ¡Decídete!</p>
+                </div>
+                <div class="cuadro__inicio">
+                    <a href="./pages/donar.html"><h3>¿QUIERES COLABORAR?</h3></a>
+                    <p class="textoIndex">Si te gusta lo que hacemos, apóyanos con una donación, para poder fortaleces nuestro proyecto y a quienes nos acompañan.</p>
+                </div>
+                <div class="cuadro__inicio">
+                    <a href="./pages/refugios.html"><h3>¿QUIERES VISITARNOS?</h3></a>
+                    <p class="textoIndex">Comparte una tarde en alguno de nuestros refugios aliados con nuestros huéspedes, y tal vez te enamores de alguno.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Información del sitio, redes cociales, copyright-->
+        <footer class="fixed-bottom">
+            <div>
+                <a href="https://www.facebook.com/ggarmes" target="_blank"><img src="./images/facebook_icon.svg" alt="Facebook Page""></a>
+                <a href="https://www.instagram.com/ggarmes/" target="_blank"><img src="./images/instagram_icon.svg" alt="Instagram Page"></a>
+                <a href="https://api.whatsapp.com/send/?phone=5491124069740" target="_blank"><img src="./images/WhatsApp.svg" alt="Whatsapp Page"></a>
+            </div>
+            <p>Copy&Right -- Todos los derechos reservados.</p>
+            <p>Made by Gervis Garmes.</p>
+        </footer>
+       
+        <script src="./js/bootstrap.min.js"></script>
     </body>
 </html>

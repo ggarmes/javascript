@@ -1,0 +1,22 @@
+
+.container-fluid{
+    .row{
+        flex-wrap: wrap;
+        h2{
+            font-size: 40px;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 10px 0;
+            @include mediaquery-mobile(){
+                font-size: 30px;
+            }
+        }
+        @include mediaquery-mobile(){
+            max-width: 350px;
+        }
+        // max-width: 350px;
+    }
+    @include mediaquery-mobile(){
+        max-width: 350px;
+    }
+}

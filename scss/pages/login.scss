@@ -1,0 +1,30 @@
+#seccion__login{
+    padding-top: 50px;
+    width: 500px;
+    height: 500px;
+    @include mediaquery-mobile(){
+        width: 250px;
+        height: 250px;
+    }
+    img{
+        width: 300px;
+        @include mediaquery-mobile(){
+            width: 200px;
+        }
+    }
+    .form-label{
+        font-size: 22px;
+    }
+    .form-text{
+        font-size: 18px;
+    }
+    .form-check-label{
+        font-size: 20px;
+    }
+    .btn-primary{
+        background-color: #f08080;//$color-primario;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+    }
+}

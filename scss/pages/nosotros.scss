@@ -1,0 +1,87 @@
+#nosotrosSection{
+    height: 100%;
+    width: 100%;
+    @include flexbox(column, nowrap, center, center);
+    div{
+        margin: 15px;
+        text-align: -webkit-center;
+        @include mediaquery-tablet(){
+            margin: 10px;
+        }
+        @include mediaquery-mobile(){
+            margin: 5px;
+        }
+    }
+    #quienesSomos{
+        @include flexbox(row, nowrap, center, center);
+        img{
+            width: 400px;
+            @include mediaquery-tablet(){
+                width: 250px;
+            }
+            @include mediaquery-mobile(){
+                width: 150px;
+            }
+        }
+        #quienesSomosTexto{
+            padding: 20px;
+            @include mediaquery-mobile(){
+                padding: 5px;
+            }
+            h2{
+                font-size: 40px;
+                text-align: left;
+                margin-bottom: 20px;
+            }
+            p{
+                text-align: justify;
+                font-size: 18px;
+                margin-top: 20px;
+                @include mediaquery-tablet(){
+                    text-align: justify;
+                }
+                @include mediaquery-mobile(){
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+            }
+        }
+        @include mediaquery-tablet(){
+            display: flex;
+            flex-direction: column;
+        }
+        @include mediaquery-mobile(){
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid $color-secundario;
+        }
+    }
+    #misionVisionValor{
+        @include flexbox(row, nowrap, center, center);
+        h2{
+            font-size: 30px;
+            text-align: center;
+            background-color: $color-secundario;
+            border-radius: 15px;
+            width: 120px;
+            font-weight: bold;
+            @include mediaquery-mobile(){
+                font-size: 20px;
+            }
+        }
+        p{
+            text-align: center;
+            font-size: 18px;
+            @include mediaquery-mobile(){
+                font-size: 14px;
+            }
+        }
+        img{
+            width: 120px;
+            margin-bottom: 20px;
+        }
+        @include mediaquery-mobile(){
+            flex-direction: column;
+        }
+    }
+}

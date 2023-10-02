@@ -1,0 +1,52 @@
+#listaRefugios{
+    height: 100%;
+    width: 100%;
+    @include flexbox(column, nowrap, center, center);
+    h2{
+        padding: 15px;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        @include mediaquery-mobile(){
+            text-align: center;
+            font-size: 25px;
+        }
+    }
+    .contenedor__refugios{
+        @include flexbox(row, wrap, center, normal);
+        .refugios{
+            width: 200px;
+            margin: 10px;
+            padding: 12px;
+            background-color: $color-primario;
+            border-radius: 10px;
+            img{
+                width: 20px;
+            }
+            h3{
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            a{
+                text-decoration: none;
+                color: $color-secundario;
+            }
+            @include mediaquery-mobile(){
+                width: 150px;
+            }
+        }
+    }
+}
+
+@include mediaquery-tablet(){
+    #mascotaRefugios{
+        display: none;
+    }
+}
+
+@include mediaquery-mobile(){
+    #mascotaRefugios{
+        display: none;
+    }
+}

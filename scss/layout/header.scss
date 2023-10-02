@@ -1,0 +1,96 @@
+@keyframes desplazamiento {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(60px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+header{
+    border-bottom: solid $color-secundario 2px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    .navbar{
+        background-color: white !important;
+    }
+    .header__logo{
+        width: 150px;
+        @include mediaquery-tablet(){
+            width: 100px;
+        }
+        @include mediaquery-mobile(){
+            width: 80px;
+        }
+        animation-name: desplazamiento;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 5s;
+        animation-delay: 3s;
+    }
+    .nav-link{
+        font-size: 20px;
+        color: $color-secundario;
+        @include mediaquery-tablet(){
+            font-size: 18px;
+            padding: 6px;
+        }
+        @include mediaquery-mobile(){
+            font-size: 18px;
+            padding: 6px;
+        }
+    }
+    .navbar-nav {
+        align-items: end;
+    }
+    #navbarNav {
+        justify-content: end;
+    }
+    .nav-item{
+        padding: 0 15px;
+        @include mediaquery-tablet(){
+            padding: 0 10px;
+        }
+        @include mediaquery-mobile(){
+            padding: 0 10px;
+        }
+        &:hover{
+            background-color: $color-primario;
+            border-radius: 20px;
+        }
+    }
+    .active{
+        background-color: $color-primario;
+        border-radius: 20px;
+        font-weight: bold;
+        @include mediaquery-tablet(){
+            border-radius: 10px;
+        }
+        @include mediaquery-mobile(){
+            border-radius: 10px;
+        }
+    }
+}
+
+/* Estilo para el banner de la frase */
+#nav__slogan{
+    background-color: $color-primario;
+    font-size: 10px;
+    padding: 2px 0;
+    h1{
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        @include mediaquery-tablet(){
+            font-size: 15px;
+        }
+        @include mediaquery-mobile(){
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+$color-primario: #fec63d;
+$color-secundario: black;
+$color-terceario: gray;
+
+$colores: (
+    primario: #fec63d,
+    secundario: black,
+    terciario: gray
+);
+
+@each $nombre-color, $color in $colores{
+    .color-#{$nombre-color}{
+        color: $color;
+    }
+}
